@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Global Job Agency Dashboard">
+  <title>Global Job Agency | Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">Global<span>Jobs</span></div>
+
+    <nav>
+      <p class="nav-title">MENU</p>
+      <a href="#" class="nav-link active" data-page="overview">🏠 Overview</a>
+      <a href="job.html" class="nav-link" data-page="jobs">💼 Find Jobs</a>
+      <a href="Applications.html" class="nav-link" data-page="applications">📄 Applications</a>
+      <a href="#" class="nav-link" data-page="saved">⭐ Saved Jobs</a>
+
+      <p class="nav-title">ACCOUNT</p>
+      <a href="#" class="nav-link" data-page="profile">👤 My Profile</a>
+      <a href="#" class="nav-link" data-page="messages">✉️ Messages</a>
+      <a href="#" class="nav-link" data-page="settings">⚙️ Settings</a>
+    </nav>
+
+    <button class="logout" id="logoutBtn">↪ Logout</button>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div>
+        <h2 id="pageTitle">Dashboard Overview</h2>
+        <p>Welcome back to Global Job Agency</p>
+      </div>
+
+      <div class="user-info">
+        <span class="notification">🔔</span>
+        <div class="avatar">U</div>
+        <span>User Account</span>
+      </div>
+    </header>
+
+    <section class="page active-page" id="overview">
+
+      <div class="welcome">
+        <div>
+          <h2>Welcome Back!</h2>
+          <p>Find your next career opportunity today.</p>
+        </div>
+        <button class="primary-btn" data-go="jobs">Explore Jobs</button>
+      </div>
+
+      <div class="stats">
+
+        <div class="stat-card">
+          <span>💼</span>
+          <p>Total Applications</p>
+          <h2>12</h2>
+        </div>
+
+        <div class="stat-card">
+          <span>⭐</span>
+          <p>Saved Jobs</p>
+          <h2>08</h2>
+        </div>
+
+        <div class="stat-card">
+          <span>📨</span>
+          <p>Interviews</p>
+          <h2>03</h2>
+        </div>
+
+        <div class="stat-card">
+          <span>✅</span>
+          <p>Profile Status</p>
+          <h2>85%</h2>
+        </div>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="panel">
+          <h3>Recent Applications</h3>
+
+          <div class="application">
+            <div>
+              <h4>Software Developer</h4>
+              <p>Technology Solutions Ltd</p>
+            </div>
+            <span class="status pending">Pending</span>
+          </div>
+
+          <div class="application">
+            <div>
+              <h4>Data Analyst</h4>
+              <p>Global Tech Company</p>
+            </div>
+            <span class="status accepted">Shortlisted</span>
+          </div>
+
+          <div class="application">
+            <div>
+              <h4>Customer Service</h4>
+              <p>Business Connect</p>
+            </div>
+            <span class="status rejected">Rejected</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Profile Completion</h3>
+          <div class="progress">
+            <div></div>
+          </div>
+          <h2>85%</h2>
+          <p>Complete your profile to improve your chances of getting hired.</p>
+          <button class="secondary-btn" data-go="profile">Complete Profile</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="page" id="jobs">
+      <div class="panel">
+        <h3>Available Jobs</h3>
+        <input type="text" id="jobSearch" placeholder="Search jobs...">
+
+        <div id="jobList"></div>
+      </div>
+    </section>
+
+    <section class="page" id="applications">
+      <div class="panel">
+        <h3>My Applications</h3>
+        <p>Your submitted job applications will appear here.</p>
+      </div>
+    </section>
+
+    <section class="page" id="saved">
+      <div class="panel">
+        <h3>Saved Jobs</h3>
+        <div id="savedJobs"></div>
+      </div>
+    </section>
+
+    <section class="page" id="profile">
+      <div class="panel">
+        <h3>My Profile</h3>
+        <form id="profileForm">
+          <label>Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your name">
+
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email">
+
+          <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter phone number">
+
+          <label>Professional Skills</label>
+          <textarea id="skills" placeholder="Enter your skills"></textarea>
+
+          <button class="primary-btn">Save Profile</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="page" id="messages">
+      <div class="panel">
+        <h3>Messages</h3>
+        <p>Your messages from employers will appear here.</p>
+      </div>
+    </section>
+
+    <section class="page" id="settings">
+      <div class="panel">
+        <h3>Account Settings</h3>
+        <p>Manage your account preferences and profile information.</p>
+        <button class="secondary-btn" id="themeBtn">Toggle Dark Mode</button>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Global Job Agency. All rights reserved.
+    </footer>
+
+  </main>
+</div>
+
+<script src="index.js"></script>
+</body>
+  </html>
+  
